@@ -147,6 +147,9 @@ The assignment consists of two main tasks:
 - Allows `cloudlaunch-user` to **view/list** all VPC resources but not modify them.
 ---
 
+## Clarity of Setup and Permissions
+- Admin account was used for creating resources; `cloudlaunch-user` was used for testing access restrictions.
+---
 ## S3 Website Links
 
 - Public site:  
