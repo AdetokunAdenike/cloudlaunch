@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudLaunch</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: white;
+      color: #2575fc;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #f0f0f0;
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 1.2em;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Welcome to CloudLaunch</h1>
+  <p>This site is hosted on <strong>Amazon S3</strong>.</p>
+  
+  <button onclick="showMessage()">Click Me</button>
+  
+  <div id="message"></div>
+
+  <script>
+    function showMessage() {
+      const messages = [
+        "Hello from JavaScript! 🎉",
+        "Static hosting is fun! 🚀",
+        "This is powered by S3 + JS ✨",
+        "CloudLaunch: lightweight and powerful 🌍"
+      ];
+      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+      document.getElementById("message").innerText = randomMessage;
+    }
+  </script>
+</body>
+</html>
